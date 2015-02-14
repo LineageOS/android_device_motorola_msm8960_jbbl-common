@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bacf61ea_f0be1bd3",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-02-14T13:21:03Z",
+      "side": 1,
+      "message": "zram size should be defined in fstab",
+      "revId": "ff419c2a9bc1a51b0f28c2287c0a1c4cd9db1b3c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
