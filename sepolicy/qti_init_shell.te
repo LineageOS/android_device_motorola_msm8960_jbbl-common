@@ -5,6 +5,19 @@ allow qti_init_shell wifi_data_file:file r_file_perms;
 allow qti_init_shell wifi_data_file:dir r_dir_perms;
 allow qti_init_shell dhcp_data_file:file { getattr unlink };
 allow qti_init_shell dhcp_data_file:dir rw_dir_perms;
+allow qti_init_shell bluetooth_data_file:file { read open };
+allow qti_init_shell bluetooth_loader_exec:file { read open };
+allow qti_init_shell mot_boot_mode_prop:file { read getattr open };
+
+## hci_qcomm_init: type=1400 audit(0.0:61): avc: denied { read write } for name="smd3" dev=tmpfs ino=5765 scontext=u:r:qti_init_shell:s0 tcontext=u:object_r:hci_attach_dev:s0 tclass=chr_file
+allow qti_init_shell hci_attach_dev:chr_file { read write ioctl open };
+
+## touch   : type=1400 audit(0.0:55): avc: denied { write } for name="settings" dev=mmcblk0p39 ino=425159 scontext=u:r:qti_init_shell:s0 tcontext=u:object_r:system_data_file:s0 tclass=file
+## libsepol.report_failure: neverallow on line 491 of system/sepolicy/domain.te (or line 9376 of policy.conf) violated by allow qti_init_shell system_data_file:file { write };
+#allow qti_init_shell system_data_file:file write;
+
+## chown   : type=1400 audit(0.0:147): avc: denied { setattr } for name="above_hispeed_delay" dev=sysfs ino=15235 scontext=u:r:qti_init_shell:s0 tcontext=u:object_r:sysfs_devices_system_cpu:s0 tclass=file
+allow qti_init_shell sysfs_devices_system_cpu:file setattr;
 
 binder_use(qti_init_shell);
 

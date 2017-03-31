@@ -4,5 +4,7 @@ type mot_boot_mode_exec, exec_type, file_type;
 type mot_boot_mode_prop, property_type;
 
 allow mot_boot_mode kmsg_device:chr_file rw_file_perms;
+allow mot_boot_mode proc:file { read open };
+allow healthd mot_boot_mode_prop:file { read getattr open };
 
 set_prop(mot_boot_mode, mot_boot_mode_prop)
