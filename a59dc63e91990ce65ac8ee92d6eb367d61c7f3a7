@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a486d77_9fb9dd30",
+        "filename": "sepolicy/netmgrd.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 16914
+      },
+      "writtenOn": "2017-05-12T20:49:06Z",
+      "side": 1,
+      "message": "Can this be fixed with by changing the filesystem permissions?  What file(s) does netmgrd need to access?",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 43
+      },
+      "revId": "a59dc63e91990ce65ac8ee92d6eb367d61c7f3a7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
