@@ -22,12 +22,9 @@ LU_PATH := system/core/libutils
 LOC_PATH := device/motorola/msm8960_jbbl-common/libmotou
 
 LOCAL_SRC_FILES := \
-	../../../../$(LU_PATH)/BlobCache.cpp \
 	../../../../$(LU_PATH)/CallStack.cpp \
 	../../../../$(LU_PATH)/FileMap.cpp \
 	../../../../$(LU_PATH)/JenkinsHash.cpp \
-	../../../../$(LU_PATH)/LinearTransform.cpp \
-	../../../../$(LU_PATH)/Log.cpp \
 	../../../../$(LU_PATH)/Looper.cpp \
 	../../../../$(LU_PATH)/NativeHandle.cpp \
 	../../../../$(LU_PATH)/Printer.cpp \
