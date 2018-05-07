@@ -16,6 +16,10 @@
 
 // #define LOG_NDEBUG 0
 #define LOG_TAG "lights"
+/*
+ * Additional hardware-specific lights
+ */
+#define LIGHT_ID_CAPS "caps"
 
 #include <cutils/log.h>
 
