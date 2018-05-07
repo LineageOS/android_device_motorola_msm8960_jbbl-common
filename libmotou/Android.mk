@@ -47,7 +47,8 @@ LOCAL_SRC_FILES := \
 
 LOCAL_MODULE := libmotou
 LOCAL_MODULE_TAGS := optional
-LOCAL_C_INCLUDES += external/safe-iop/include
+LOCAL_C_INCLUDES += external/safe-iop/include \
+	system/core/libvndksupport/include
 LOCAL_SHARED_LIBRARIES := libbacktrace libcutils libdl liblog
 
 include $(BUILD_SHARED_LIBRARY)
