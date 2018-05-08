@@ -32,6 +32,7 @@ LOCAL_SRC_FILES := \
 	../../../../$(LU_PATH)/PropertyMap.cpp \
 	../../../../$(LU_PATH)/RefBase.cpp \
 	../../../../$(LU_PATH)/SharedBuffer.cpp \
+	../../../../$(LU_PATH)/StrongPointer.cpp \
 	../../../../$(LU_PATH)/Static.cpp \
 	../../../../$(LU_PATH)/StopWatch.cpp \
 	../../../../$(LU_PATH)/String8.cpp \
