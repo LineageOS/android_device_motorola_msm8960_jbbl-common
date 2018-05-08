@@ -49,6 +49,6 @@ LOCAL_MODULE := libmotou
 LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES += external/safe-iop/include \
 	system/core/libvndksupport/include
-LOCAL_SHARED_LIBRARIES := libbacktrace libcutils libdl liblog
+LOCAL_SHARED_LIBRARIES := libbacktrace libcutils libdl liblog libvndksupport
 
 include $(BUILD_SHARED_LIBRARY)
