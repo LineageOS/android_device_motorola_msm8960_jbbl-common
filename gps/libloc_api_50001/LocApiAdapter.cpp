@@ -31,6 +31,7 @@
 
 #include <dlfcn.h>
 #include <LocApiAdapter.h>
+#include <android/log.h>
 #include "loc_eng_msg.h"
 #include "loc_log.h"
 #include "loc_eng_ni.h"

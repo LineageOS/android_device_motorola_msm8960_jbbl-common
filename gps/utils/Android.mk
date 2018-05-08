@@ -8,6 +8,7 @@ include $(CLEAR_VARS)
 ## Libs
 LOCAL_SHARED_LIBRARIES := \
     libutils \
+    liblog \
     libcutils
 
 LOCAL_SRC_FILES += \

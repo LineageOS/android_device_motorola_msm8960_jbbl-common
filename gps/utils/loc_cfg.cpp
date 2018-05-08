@@ -39,6 +39,7 @@
 #include <time.h>
 #include <loc_cfg.h>
 #include <log_util.h>
+#include <android/log.h>
 
 /*=============================================================================
  *
