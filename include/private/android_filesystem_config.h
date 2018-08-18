@@ -115,6 +115,7 @@
 #define AID_WAKELOCK      3010  /* Allow system wakelock read/write access */
 #define AID_QCOM_THERMAL  3011  /* access for thermal-client socket */
 #define AID_QCOM_DIAG     3012  /* can read/write /dev/diag */
+#define AID_QCOM_ONCRPC   3013  /* can read/write /dev/oncrpc files */
 
 /* The range 5000-5999 is also reserved for OEM, and must never be used here. */
 #define AID_OEM_RESERVED_2_START 5000
@@ -221,6 +222,7 @@ static const struct android_id_info android_ids[] = {
     { "cache",         AID_CACHE, },
     { "diag",          AID_DIAG, },
     { "qcom_diag",     AID_QCOM_DIAG, },
+    { "qcom_oncrpc",   AID_QCOM_ONCRPC, },
 
     { "net_bt_admin",  AID_NET_BT_ADMIN, },
     { "net_bt",        AID_NET_BT, },
