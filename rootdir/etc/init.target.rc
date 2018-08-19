@@ -132,7 +132,7 @@ on post-fs-data
     insmod /system/lib/modules/cfg80211.ko
     insmod /system/lib/modules/tcp_westwood.ko
     #initialize wlan
-    write /dev/wcnss_wlan 1
+    write /dev/wcnss_wlan ""
     write /sys/module/wcnss_ssr_8960/parameters/enable_riva_ssr 1
 
 on boot
