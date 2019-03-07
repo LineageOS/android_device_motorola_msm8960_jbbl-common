@@ -26,4 +26,4 @@ unix_socket_connect(aplogd, logdr, logd)
 unix_socket_connect(aplogd, vold, vold)
 
 allow aplogd aplogd_prop:property_service set;
-unix_socket_connect(aplogd, property, init)
+set_prop(aplogd, init)
