@@ -41,7 +41,6 @@ LOCAL_SRC_FILES += \
 	CameraParameters2.cpp \
 	ICamera.cpp \
 	ICameraClient.cpp \
-	ICameraServiceProxy.cpp \
 	ICameraRecordingProxy.cpp \
 	ICameraRecordingProxyListener.cpp \
 	camera2/CaptureRequest.cpp \

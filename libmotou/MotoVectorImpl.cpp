@@ -24,6 +24,7 @@
 #include <safe_iop.h>
 
 #include <utils/Errors.h>
+#include <vndksupport/linker.h>
 
 #include "MotoVectorImpl.h"
 #include "../../../../system/core/libutils/SharedBuffer.h"

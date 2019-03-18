@@ -115,6 +115,7 @@
 #define AID_WAKELOCK      3010  /* Allow system wakelock read/write access */
 #define AID_QCOM_THERMAL  3011  /* access for thermal-client socket */
 #define AID_QCOM_DIAG     3012  /* can read/write /dev/diag */
+#define AID_UHID          3013  /* allow read/write to /dev/uhid node */
 
 /* The range 5000-5999 is also reserved for OEM, and must never be used here. */
 #define AID_OEM_RESERVED_2_START 5000
@@ -146,6 +147,7 @@
 #define AID_ISOLATED_END   99999 /* end of uids for fully isolated sandboxed processes */
 
 #define AID_USER        100000  /* offset for uid ranges for each user */
+#define AID_USER_OFFSET 100000  /* offset for uid ranges for each user */
 
 #define AID_SHARED_GID_START 50000 /* start of gids for apps in each user to share */
 #define AID_SHARED_GID_END   59999 /* start of gids for apps in each user to share */

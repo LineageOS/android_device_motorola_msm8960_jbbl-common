@@ -12,4 +12,4 @@ allow whisperd system_file:file { execmod execute_no_trans };
 allow whisperd whisperd_sysfs:file { read open };
 
 allow whisperd whisperd_prop:property_service set;;
-unix_socket_connect(whisperd, property, init)
+set_prop(whisperd, init)

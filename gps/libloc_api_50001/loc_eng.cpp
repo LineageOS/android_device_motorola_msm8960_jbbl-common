@@ -49,6 +49,7 @@
 #include <cutils/sched_policy.h>
 #include <utils/SystemClock.h>
 #include <utils/Log.h>
+#include <android/log.h>
 #include <string.h>
 
 #include <loc_eng.h>
